@@ -45,7 +45,7 @@ public class GetData extends HttpServlet {
                 case 1://Request of the CSV
                     String home = System.getProperty("user.home");
                     rt=home + File.separator + "Desktop" + File.separator + Name;//Ruta Mac
-                    rt="C:\\"+Name;//Ruta Windows
+                    //rt="C:\\"+Name;//Ruta Windows
                     File FileName = new File(rt);
                     JSONArray dd = cn.FileConverter(FileName);
                     out.println(dd);
